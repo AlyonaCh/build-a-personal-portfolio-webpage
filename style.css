@@ -1,0 +1,194 @@
+body {
+  margin: 0px auto;
+  color: #454545;
+  font-family: "Playfair Display", serif;
+  padding: 0px 10%;
+  font-family: "Libre Baskerville", serif;
+}
+
+#app {
+  background-color: #f5f5f5;
+  font-size: 20px;
+  margin: 0px 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: sticky;
+  background-color: #f5f5f5;
+  width: 100%;
+  top: 0px;
+  z-index: 100;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  nav {
+    justify-content: end;
+  }
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #454545;
+}
+nav a:hover {
+  color: #e8bb60;
+}
+
+.header {
+  background: url(imajes/pexels-daan-stevens-939331.jpg) no-repeat;
+  background-position: left center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 360px) {
+  .header {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 360px) {
+  .header {
+    align-items: center;
+  }
+}
+.header h1 {
+  font-size: 35px;
+}
+.header p {
+  margin: 0;
+  font-size: 25px;
+}
+.header h1, .header p {
+  color: #e8bb60;
+  text-shadow: 2px 2px 2px #454545;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+section h2 {
+  color: #e8bb60;
+}
+
+section:nth-child(odd) {
+  background-color: #eaeaea;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 670px) {
+  .about {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 670px) {
+  .about {
+    justify-content: space-between;
+  }
+}
+.about ul {
+  list-style: none;
+}
+.about h2 {
+  margin-left: 30px;
+}
+.about img {
+  width: 60%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 470px) {
+  .skills img {
+    height: auto;
+    width: 45px;
+  }
+  .skills figure {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 470px) {
+  .skills img {
+    height: auto;
+    width: 64px;
+  }
+}
+.skills h2 {
+  margin: 0;
+}
+.skills div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skills div figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills div figure p {
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.projects .projects_items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects .projects_items div {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (max-width: 560px) {
+  .projects .projects_items div {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 560px) {
+  .projects .projects_items div {
+    width: 46%;
+  }
+}
+.projects .projects_items div img:hover {
+  transform: scale(140%, 140%);
+  cursor: pointer;
+}
+.projects img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=style.css.map */
